@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Copiador de Tabelas Acessível",
+  "version": "1.0",
+  "description": "Adiciona um botão para copiar tabelas mantendo a formatação original.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "copiadordetabelas@paulosantesso.extensao",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
